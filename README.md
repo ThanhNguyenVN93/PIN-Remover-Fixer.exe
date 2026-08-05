@@ -6,6 +6,14 @@
 
 A Windows desktop tool that diagnoses **why the "Remove" button under Windows Hello PIN is greyed out**, and applies an official fix — following the sanctioned path only. It never touches the SAM database, never bypasses BitLocker, and never suspends BitLocker automatically without your explicit action.
 
+## 📥 Download
+
+**[⬇️ Download latest release](https://github.com/ThanhNguyenVN93/PIN-Remover-Fixer.exe/releases/latest)**
+
+> ⚠️ Windows SmartScreen may show "Windows protected your PC" since the executable isn't code-signed yet. Click **More info → Run anyway** to proceed. The tool is fully open-source — you can review the code before running it.
+
+No installation needed — download the `.exe` and run it directly (Administrator rights required).
+
 ## Screenshots
 
 | Diagnostics | Recommendations |
@@ -76,6 +84,10 @@ Issues and pull requests are welcome. Please keep changes aligned with the core 
 If this tool helped you, consider supporting its development — see the **Donate** tab in the app, or:
 
 - Ko-fi: https://ko-fi.com/thanhnguyen150993
+
+## Changelog
+
+See [Releases](https://github.com/ThanhNguyenVN93/PIN-Remover-Fixer.exe/releases) for version history and download links.
 
 ## License
 
