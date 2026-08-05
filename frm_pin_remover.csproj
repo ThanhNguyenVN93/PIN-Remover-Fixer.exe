@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>PIN Remover Fixer</RootNamespace>
+    <AssemblyName>PIN Remover Fixer</AssemblyName>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Product>PIN Remover Fixer</Product>
+    <AssemblyTitle>PIN Remover Fixer</AssemblyTitle>
+    <Description>Diagnoses why the Windows Hello "Remove PIN" button is disabled and applies an official fix — never touches the SAM database and never bypasses BitLocker.</Description>
+    <Authors>Nguyen Minh Thanh</Authors>
+    <Company>Nguyen Minh Thanh</Company>
+    <Copyright>Copyright © 2026 Nguyen Minh Thanh</Copyright>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.8" />
+    <!-- Weaves referenced assemblies (Guna.UI2.dll) as embedded resources into the exe at build time,
+         so copying just frm_pin_remover.exe to another machine is enough — no loose DLLs needed. -->
+    <PackageReference Include="Fody" Version="6.9.3" PrivateAssets="all" />
+    <PackageReference Include="Costura.Fody" Version="6.2.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="momo.jpg" />
+    <EmbeddedResource Include="tcb.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Management" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+
+</Project>

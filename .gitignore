@@ -1,0 +1,24 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# NuGet
+*.nupkg
+packages/
+
+# Fody weaver-generated schema (auto-added on build, not needed in source control)
+FodyWeavers.xsd
